@@ -1,0 +1,17 @@
+version: '3.8'
+
+volumes:
+    grafana_storage: {}
+networks:
+    grafana-net:
+services:
+  grafana:
+    image: grafana/grafana-enterprise
+    container_name: grafana-ct
+    ports: 
+      - '3000:3000'
+    volumes:
+      - './grafana.ini:/etc/grafana.ini'
+      - 'grafana_storage:/var/lib/grafana'
+    networks: 
+      - grafana-net
