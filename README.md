@@ -17,3 +17,5 @@ http://localhost:3000
  ``` bash
 docker-compose down
 ```
+<img width="1801" height="355" alt="image" src="https://github.com/user-attachments/assets/1a64866a-4cab-48ae-a6a1-5ab78ccc7d32" />
+<img width="1853" height="949" alt="image" src="https://github.com/user-attachments/assets/2a502b48-f241-4ca8-88b7-533bd6ffa8b9" />
