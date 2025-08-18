@@ -1,0 +1,18 @@
+stages:
+  - deploy
+  - test
+
+ct_up:
+  stage: deploy
+  script: 
+    - sudo docker-compose down || true  
+    - sudo docker-compose up -d  
+  tags:
+    - shell
+
+test_host:
+  stage: test
+  script:
+    - sleep 10 
+    - curl http://localhost:3000
+  tags:
